@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <script src="https://kit.fontawesome.com/803ec0156a.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: Arial, Helvetica, sans-serif;
+             */
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: rgb(186, 231, 231);
+            
+        }
+        .container{
+            width: 100%;
+            height: 145vh;
+            padding: 0 10%;
+            
+
+        }
+        .container h1{
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 70px;
+            font-weight: 600;
+            position: relative;
+        }
+        .container h1::after{
+            content:'';
+            /* background: #303ef7; */
+            background: purple;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap: 30px;
+        }
+        .service{
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            transition: transform 0.5s;
+            box-shadow: 12px 12px 20px grey;
+
+
+        }
+        .service i{
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #303ef7;
+
+        }
+        .service h2{
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .service:hover{
+            /* background: #303ef7; */
+            background: green;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .service:hover i{
+            color: #fff;
+
+        }
+        #newheading{
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 70px;
+            font-weight: 600;
+            position: relative;
+        }
+        #Tut1{
+            
+            font-weight: bolder;
+            font-stretch: condensed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Courses</h1>
+        <div class="row">
+            <div class="service">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Front End Development</h2>
+                <p>Building UI/UX using HTML CSS and Javascript with major and minor projects within the course.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>High Level Languages</h2>
+                <p>Learn to Code your programs for problem solving using Java,C,C++,python etc.</p>
+            </div>
+            <div class="service">
+                <i class="fa-sharp fa-solid fa-file-excel"></i>
+                <h2>Excel</h2>
+                <p>From Basic to Advance use of excel and its functionalites via practical oriented program.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h2>Tuitions</h2>
+                <p id="Tut1">6,7,8 All Subjects<br>9<sup>th</sup> and 10<sup>th</sup> Commerce,Economics,Science,Math,<br>Buisness Studies,Java,Python.<br>11th and 12th Accounts,PCM,Economics,Buisness Studies,Java,Python</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-school"></i>
+                <h2>Pre Primary School</h2>
+                <p>A great place for 0-5 Age children to start their journey in the world of School.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-keyboard"></i>
+                <h2>Tally</h2>
+                <p>Learn to implement and create exciting business Data and solutions</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-fill"></i>
+                <h2>Graphic Designing</h2>
+                <p>Learn to implement,create exciting designs and visual content in order to communicate <br> with mass.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-brush"></i>
+                <h2>Adobe and Photoshop</h2>
+                <p>Create Beautiful Images, Graphics, Paintings, And 3D Artwork On Your Desktop And iPad.<br> If You Can Dream It, You Can Make It With Photoshop and adobe</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h2>Corel Draw</h2>
+                <p>Get Everything You Need To Create And Complete Important Design Projects using Corel Draw</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VEDAS</title>
+    <style>
+        body{
+            /* background-color: rgb(78, 68, 68); */
+            margin: 0px;
+            padding: 0px;
+            max-height: 100%;
+            background-image: url(mainbackground.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        .secimage{
+            background-image: url("diego-ph-5LOhydOtTKU-unsplash.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 444px;
+            
+        }
+        .mid{
+            /* border: 2px solid blue; */
+            display: block;
+            width: 29%;
+            margin: 20px auto;
+            background-color: rgb(134, 134, 241);
+            border-radius: 14px;
+            
+            
+        }
+        .navbar{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar li{
+            /* display: inline-block; */
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .navbar li a{
+            color: black;
+            text-decoration: none;
+            margin: 6px;
+            font-size: 14pt;
+
+        }
+        .navbar li a:hover {
+            text-decoration: underline;
+            background-color: grey;
+            
+        }
+        .container{
+        /* border: 2px solid black; */
+        max-width:100%;
+        height: max-content;
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        background-color: rgba(75, 6, 54, 0.397);
+        background-image: url(back2.avif);
+        flex-wrap: wrap;
+        
+        }
+        .item{
+        /* border: 2px solid red; */
+        width:300px;
+        height:350px;
+        margin: 10px;
+        padding: 3px;
+        border-radius: 22px;
+        transition: 1s;
+        position: relative;
+        /* background-image:url("back3.avif"); */
+        
+       }
+       @media screen and (max-width:600px) and (min-width:375px){
+            .item{
+                display: inline;
+                /* width: fit-content;
+                height: fit-content; */
+                flex-direction: row;
+
+            }
+       }
+       
+        .item:hover{
+        transform: scale(1.2);
+       }
+       #item1{
+        background-image: url(schooltest2.webp);
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+       #item2{
+        background-image: url(ct2.webp);
+        /* opacity: 0.9; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+       }
+       #item3{
+        background-image: url(tectest2.webp);
+        /* opacity: 0.9; */
+        
+    
+       }
+       .he1{
+        font-family: cursive;
+        font-size: large;
+       }
+       .contact{
+        margin-top: 312px;
+        padding-right: 30px;
+        float: right;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: white;
+       }
+       #logo{
+        width: 63px;
+        height: 63px;
+        float: left;
+        margin-left: 23px;
+        border-radius: 14px;
+        transition: 1s;
+       }
+       #logo:hover{
+        transform: scale(1.2);
+       }
+       .fa {
+         padding: 20px;
+         font-size: 30px;
+         width: 30px;
+         text-align: center;
+         text-decoration: none;
+         border-radius: 50%;
+        }
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+        .fa-instagram {
+        background: #55ACEE;
+        color: white;
+       }
+       .fa:hover {
+        opacity: 0.7;
+       }
+       .socials{
+        /* border: 2px solid red; */
+        width: 200px;
+        display: flex;
+        /* margin-left: 550px; */
+        flex-wrap: wrap;
+        margin-top: 165px;
+        position: relative;
+        
+        /* margin-top: 1000px; */
+
+
+       }
+       .socials h4,p{
+        color: white;
+        position: relative;
+
+       }
+       .ourstudents{
+        /* border: 2px solid red; */
+        max-width:100%;
+        height: max-content;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        
+        
+
+       }
+       .container2{
+        /* border: 2px solid red; */
+        width: 350px;
+        height: 270px;
+        margin: 10px;
+        border-radius: 8px;
+        position: relative;
+        /* display: flex;
+        flex-wrap: wrap; */
+        
+        
+
+       }
+       #childimage1{
+          background-image: url(childimg1\ \(1\).jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          
+       }
+       #childimage2{
+          background-image: url(childimg1\ \(2\).jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          
+       }
+       #childimage3{
+          background-image: url(childimg1\ \(3\).jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          
+       }
+       #h3{
+        font-size: 10vh;
+        font-style: italic;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       
+
+
+
+       
+    </style>
+</head>
+<body>
+    <!-- <section class="secimage"> -->
+        <nav>
+            <img id="logo" src="LOGO10PNG.png" alt="logo">
+            <div class="mid">
+                
+                <ul class="navbar">
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="aboutus.html" target="_blank">About us</a></li>
+                    <li><a href="Courses.html" target="_blank">Courses</a></li>
+                    <li><a href="#">Carrears</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    <!-- </section> -->
+    <div class="container">
+        <div class="item" id="item1"><h4 class="he1">VEDAS Global School</h4></div>
+        <div class="item" id="item2"><h4 class="he1">VEDAS Coaching institue</h4></div>
+        <!-- <div class="item" id="item3"><h4 class="he1">VEDAS Tuition point</h4></div> -->
+        <div class="item" id="item3"><h4 class="he1">VEDAS Techonolgies</h4></div>
+
+    </div>
+    <div class="ourstudents">
+        <h3 id="h3">OUR STUDENTS</h3>
+    </div>
+    
+    <div class="ourstudents">
+        
+        <div class="container2" id="childimage1"></div>
+        <div class="container2" id="childimage2"></div>
+        <div class="container2" id="childimage3"></div>
+     </div>
+     <footer>
+        <div class="socials">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://instagram.com/vditofficial?igshid=ZDdkNTZiNTM=" class="fa fa-instagram"></a>
+        <h4>Address:</h4>
+        <p>Block 69
+            THDC COLONY
+            DEHRAKHAS
+            DEHRADUN
+            248001</p>
+        </div>
+     </footer>
+    
+    
+    
+    
+    
+</body>
+</html>
